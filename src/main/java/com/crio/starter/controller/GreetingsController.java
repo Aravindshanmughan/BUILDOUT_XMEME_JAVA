@@ -10,11 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
+
 public class GreetingsController {
 
   private final GreetingsService greetingsService;
 
-  @GetMapping("/say-hello")
+ @GetMapping("/say-hello")
   public ResponseDto sayHello(@RequestParam String messageId) {
     return greetingsService.getMessage(messageId);
   }

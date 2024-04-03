@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import com.crio.starter.data.Meme;
 
 
 @Data
 @AllArgsConstructor
 @EqualsAndHashCode
 @NoArgsConstructor
-public class ResponseDto {
-
-  private String message;
-
+public class MemeDto {
+    
+    private String id;
 }
